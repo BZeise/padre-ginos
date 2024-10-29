@@ -1,3 +1,6 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+
 const Pizza = (props) => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, props.name ?? "missingName"),
@@ -33,7 +36,7 @@ const App = () => {
 // createElement uses the Stamp once to create that instance of the class (or component, in this case)
 
 const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 // root.render is a good place to put in parallel apps that might need to be swapped in/out
 //  maybe like dev/prod elements
 root.render(React.createElement(App));
