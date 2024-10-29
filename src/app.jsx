@@ -5,14 +5,20 @@ const App = () => {
   return (
     <div>
       <h1>Padre Zino's - Order Now</h1>
-      <Pizza name="Pepperoni" description="pep n cheese n stuff" />
+      <Pizza
+        name="Pepperoni"
+        description="pep n cheese n stuff"
+        image={"/public/pizzas/pepperoni.webp"}
+      />
       <Pizza
         name="The Hawaiian Pizza"
         description="Sliced Ham, Pineapple, Mozzarella Cheese"
+        image={"/public/pizzas/hawaiian.webp"}
       />
       <Pizza
         name="Baked Potato Pizza"
         description="unholy potato mash, wtf Minnesota"
+        image={"/public/pizzas/ital_cpcllo.webp"}
       />
     </div>
   );
