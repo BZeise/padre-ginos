@@ -1,6 +1,11 @@
 const Pizza = (props) => {
   return (
-    <div className="pizza">
+    <div
+      className="pizza"
+      onClick={() => {
+        console.log("hi");
+      }}
+    >
       <h1>{props.name}</h1>
       {/* takes any valid JS expression */}
       <p>{props.description}</p>
