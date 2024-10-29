@@ -6,8 +6,8 @@ import PizzaOfTheDay from "./PizzaOfTheDay";
 const App = () => {
   return (
     <StrictMode>
-      <div className="logo">
-        <h1>Padre Zino's - Order Now</h1>
+      <div>
+        <h1 className="logo">Padre Zino's - Order Now</h1>
         <Order />
         <PizzaOfTheDay />
       </div>
