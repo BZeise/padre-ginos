@@ -9,7 +9,10 @@ const Pizza = (props) => {
       <h1>{props.name}</h1>
       {/* takes any valid JS expression */}
       <p>{props.description}</p>
-      <img src={props.image} alt={props.name} />
+      <img
+        src={props.image ? props.image : "https://picsum.photos/200"}
+        alt={props.name}
+      />
     </div>
   );
 };
