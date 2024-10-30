@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <StrictMode>
-      <QueryClientProvider queryClient={queryClient}>
+      <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
       </QueryClientProvider>
     </StrictMode>
